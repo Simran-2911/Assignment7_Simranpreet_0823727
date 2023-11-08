@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+  <header>
+    <h1>Simranpreet Kaur</h1>
+  </header>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <form id="schoolForm">
+          <h2>School Information</h2>
+          <label for="schoolName">Name of School:</label>
+          <input type="text" id="schoolName" required>
+          <label for="dateOfJoining">Date of Joining:</label>
+          <input type="date" id="dateOfJoining" required>
+          <label for="graduated">Graduated:</label>
+          <input type="radio" id="graduated" name="graduationStatus" value="yes" required> Yes
+          <input type="radio" id="notGraduated" name="graduationStatus" value="no" required> No
+        </form>
+      </div>
+      <div class="swiper-slide">
+        <form id="personalForm">
+          <h2>Personal Information</h2>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" required>
+          <label for="zipCode">Zip code (Canada):</label>
+          <input type="text" id="zipCode" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
+        </form>
+      </div>
+      <div class="swiper-slide">
+        <form id="paymentForm">
+          <h2>Payment Information</h2>
+          <label for="creditCardNumber">Credit Card Number:</label>
+          <input type="text" id="creditCardNumber" required>
+          <label for="expirationDate">Expiration Date:</label>
+          <input type="date" id="expirationDate" required>
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" required>
+        </form>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <div>
+    <input type="submit" value="Submit">
+</div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="form.js"></script>
+  <footer>
+    <p>Copyright @ 2023 | Simranpreet Kaur</p>
+</footer>
+</body>
+</html>
